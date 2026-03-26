@@ -1,0 +1,43 @@
+{
+  "name": "passport-photo-pro/passport-photo-pro",
+  "description": "Generate print-ready passport photo sheets with AI background removal and enhancement",
+  "type": "project",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Passport Photo Pro Team"
+    }
+  ],
+  "require": {
+    "php": ">=7.4"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^9.5"
+  },
+  "autoload": {
+    "psr-4": {
+      "PassportPhotoPro\\": "app/"
+    },
+    "files": [
+      "config.php"
+    ]
+  },
+  "config": {
+    "bin-dir": "bin"
+  },
+  "scripts": {
+    "start": "php -S localhost:8000",
+    "test": "phpunit",
+    "serve": [
+      "@start"
+    ]
+  },
+  "keywords": [
+    "passport",
+    "photos",
+    "pdf",
+    "generator",
+    "background-removal",
+    "image-processing"
+  ]
+}
